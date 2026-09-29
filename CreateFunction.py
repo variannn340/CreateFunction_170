@@ -20,3 +20,7 @@ elif satuan == "F":
     print(suhu, "°F =", hasil, "°C")
 else:
     print(hasil)
+
+
+
+luas_lingkaran = lambda r: 3.14 * r ** 2  #2. Membuat lambda function untuk jari-jari lingkaran
