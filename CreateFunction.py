@@ -24,3 +24,6 @@ else:
 
 
 luas_lingkaran = lambda r: 3.14 * r ** 2  #2. Membuat lambda function untuk jari-jari lingkaran
+
+# Input jari-jari
+jari_jari = float(input("Masukkan jari-jari lingkaran: "))
