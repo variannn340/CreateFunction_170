@@ -30,3 +30,6 @@ jari_jari = float(input("Masukkan jari-jari lingkaran: "))
 
 # Menghitung luas
 hasil = luas_lingkaran(jari_jari)
+
+# Menampilkan hasil
+print("Luas lingkaran:", hasil)
