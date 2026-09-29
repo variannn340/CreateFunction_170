@@ -1,7 +1,7 @@
 def konversi_suhu(suhu, satuan):
     konversi = {
-        "C": (suhu * 9/5) + 32,
-        "F": (suhu - 32) * 5/9
+        "C": ((suhu * 9/5) + 32, "°F"),
+        "F": ((suhu - 32) * 5/9, "°C")
     }
 
     return konversi[satuan]
@@ -11,9 +11,14 @@ def konversi_suhu(suhu, satuan):
 suhu = float(input("Masukkan suhu: "))
 satuan = input("Masukkan satuan (C/F): ").upper()
 
-hasil = konversi_suhu(suhu, satuan)
 
-print("Hasil konversi:", hasil)
+hasil, simbol = konversi_suhu(suhu, satuan)
+
+
+simbol_awal = {"C": "°C", "F": "°F"}[satuan]
+
+
+print(f"{suhu} {simbol_awal} = {hasil:.2f} {simbol}")
 
 
 
