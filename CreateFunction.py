@@ -13,3 +13,10 @@ suhu = float(input("Masukkan suhu: "))
 satuan = input("Masukkan satuan (C/F): ").upper()
 
 hasil = konversi_suhu(suhu, satuan)
+
+if satuan == "C":
+    print(suhu, "°C =", hasil, "°F")
+elif satuan == "F":
+    print(suhu, "°F =", hasil, "°C")
+else:
+    print(hasil)
